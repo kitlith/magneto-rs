@@ -1,0 +1,29 @@
+[package]
+name = "magneto"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nalgebra = "0.31"
+nalgebra-lapack = { version = "0.22", default-features = false, features = ["intel-mkl"]}
+num-traits = "0.2"
+
+byteorder = "1.4"
+
+# autocxx = "0.22"
+# cxx = "1.0"
+
+[dev-dependencies]
+rand = "0.8.4"
+approx = "0.5.1"
+
+# [build-dependencies]
+# autocxx-build = "0.22"
+# miette = { version="4.3", features=["fancy"] } # optional but gives nicer error messages!
+
+# [build-dependencies]
+# bindgen = "0.60.1"
+# cc = "1.0"
+# miette = { version="4.3", features=["fancy"] } # optional but gives nicer error messages!
